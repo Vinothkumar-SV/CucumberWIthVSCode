@@ -70,4 +70,3 @@ Vinothkumar-SV
 🏗️ Architecture Diagram
 
 <img width="2967" height="724" alt="image" src="https://github.com/user-attachments/assets/183a540e-6a39-4732-85d0-096954f9f430" />
-
