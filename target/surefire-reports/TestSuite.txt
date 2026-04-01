@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 63.76 s <<< FAILURE! -- in TestSuite
+com.leafBot.testcases.TC003_CreateLead.createLead[DemoSalesManager, crmsfa, Qeagle, Hari, R, hari@testleaf.com](2) -- Time elapsed: 1.177 s <<< FAILURE!
+java.lang.RuntimeException: See the reporter for details.
+	at utils.Reporter.reportStep(Reporter.java:73)
+	at utils.Reporter.reportStep(Reporter.java:99)
+	at com.leafBot.selenium.api.base.SeleniumBase.takeSnap(SeleniumBase.java:469)
+	at utils.Reporter.reportStep(Reporter.java:67)
+	at utils.Reporter.reportStep(Reporter.java:99)
+	at com.leafBot.selenium.api.base.SeleniumBase.click(SeleniumBase.java:39)
+	at com.leafBot.pages.LoginPage.clickLogin(LoginPage.java:26)
+	at com.leafBot.testcases.TC003_CreateLead.createLead(TC003_CreateLead.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+com.leafBot.testcases.TC003_CreateLead.createLead[DemoSalesManager, crmsfa, Qeagle, Hari, R, hari@testleaf.com](2) -- Time elapsed: 0.984 s <<< FAILURE!
+java.lang.RuntimeException: See the reporter for details.
+	at utils.Reporter.reportStep(Reporter.java:73)
+	at utils.Reporter.reportStep(Reporter.java:99)
+	at com.leafBot.selenium.api.base.SeleniumBase.takeSnap(SeleniumBase.java:469)
+	at utils.Reporter.reportStep(Reporter.java:67)
+	at utils.Reporter.reportStep(Reporter.java:99)
+	at com.leafBot.selenium.api.base.SeleniumBase.click(SeleniumBase.java:39)
+	at com.leafBot.pages.LoginPage.clickLogin(LoginPage.java:26)
+	at com.leafBot.testcases.TC003_CreateLead.createLead(TC003_CreateLead.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
