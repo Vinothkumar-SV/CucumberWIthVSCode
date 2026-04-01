@@ -1,72 +1,135 @@
-🚀 Selenium Advanced Framework
-📌 Overview
+# 🚀 Selenium Advanced Framework
 
+## 📌 Overview
 This project is a robust Selenium-based test automation framework designed for advanced web application testing. It leverages Java, TestNG, and Maven, and supports features like data-driven testing, custom reporting, and modular page object design.
 
-✨ Features
-📂 Page Object Model (POM): Organized page classes for maintainable tests
-📊 Data-Driven Testing: Uses external data sources for flexible test scenarios
-📄 Custom Reporting: Generates detailed HTML reports with screenshots
-⚙️ TestNG Integration: Supports parallel execution, grouping, and configuration
-♻️ Reusable Utilities: Helper classes for reporting, data handling, and locators
-🗂️ Project Structure
+## ✨ Features
+- 📂 Page Object Model (POM) for maintainable test structure  
+- 📊 Data-Driven Testing using external data sources  
+- 📄 Custom HTML Reporting with screenshots  
+- ⚙️ TestNG Integration (parallel execution, grouping, configuration)  
+- ♻️ Reusable Utility Classes for common operations  
+
+## 🗂️ Project Structure
+```
+
 pom.xml                # ⚙️ Maven build configuration
 testng.xml             # 🧪 TestNG suite configuration
 data/                  # 📊 Test data files
 reports/               # 📄 Generated test reports
+
 src/
-  main/java/com/leafBot/
-    locators/          # 📍 Locator definitions
-    pages/             # 📄 Page object classes
-    selenium/api/      # 🔧 Selenium API wrappers
-    testcases/         # 🧪 Test case implementations
-    testng/            # ⚙️ TestNG customizations
-    utils/             # 🧰 Utility classes
-  test/java/           # 🧪 Test source files
+main/java/com/leafBot/
+locators/          # 📍 Locator definitions
+pages/             # 📄 Page object classes
+selenium/api/      # 🔧 Selenium API wrappers
+testcases/         # 🧪 Test case implementations
+testng/            # ⚙️ TestNG customizations
+utils/             # 🧰 Utility classes
+
+test/java/           # 🧪 Test source files
+
 target/                # 📦 Build output
-⚡ Setup Instructions
-🔧 Prerequisites
-☕ Java JDK 8 or above
-📦 Maven
-🌐 ChromeDriver / other browser drivers
-📥 Clone the Repository
+
+````
+
+## ⚡ Setup Instructions
+
+### 🔧 Prerequisites
+- ☕ Java JDK 8 or above  
+- 📦 Maven  
+- 🌐 ChromeDriver or other browser drivers  
+
+### 📥 Clone the Repository
+```bash
 git clone <repo-url>
-📦 Install Dependencies
+````
+
+### 📦 Install Dependencies
+
+```bash
 mvn clean install
-⚙️ Configure TestNG
+```
 
-Edit testng.xml to specify test suites, groups, and parameters
+### ⚙️ Configure TestNG
 
-📊 Add Test Data
+Update `testng.xml` to define test suites, groups, and parameters.
 
-Place your data files in the data/ directory
+### 📊 Add Test Data
 
-▶️ Running Tests
-🧪 Via Maven
+Place test data files inside the `data/` directory.
+
+## ▶️ Running Tests
+
+### 🧪 Using Maven
+
+```bash
 mvn test
-⚙️ Via TestNG
+```
+
+### ⚙️ Using TestNG XML
+
+```bash
 mvn test -DsuiteXmlFile=testng.xml
-📄 Reports
-📊 HTML reports → reports/ and test-output/
-📸 Screenshots → images/ folder (for failures)
-🧩 Key Classes
-🔐 LoginPage.java → Login page actions
-📊 DataLibrary.java → Test data handling
-📄 Reporter.java → Custom reporting
-📍 Locator.java → Centralized locators
-🎯 Customization
-➕ Add pages → pages/
-🧪 Add tests → testcases/
-🔧 Extend utilities → utils/
-🛠️ Troubleshooting
-⚠️ Check browser driver compatibility
-📦 Verify dependencies in pom.xml
-📄 Review logs in reports/ and test-output/
+```
 
-👤 Author
+## 📄 Reports
 
-Vinothkumar-SV
+* 📊 HTML reports generated in:
 
-🏗️ Architecture Diagram
+  * `reports/`
+  * `test-output/`
+* 📸 Screenshots for failed tests stored in `images/` folder
 
-<img width="2967" height="724" alt="image" src="https://github.com/user-attachments/assets/183a540e-6a39-4732-85d0-096954f9f430" />
+## 🧩 Key Classes
+
+* 🔐 `LoginPage.java` → Handles login functionality
+* 📊 `DataLibrary.java` → Manages test data
+* 📄 `Reporter.java` → Custom reporting logic
+* 📍 `Locator.java` → Centralized locators
+
+## 🎯 Customization
+
+* ➕ Add new Page Classes in `pages/`
+* 🧪 Add Test Cases in `testcases/`
+* 🔧 Extend utilities in `utils/`
+
+## 🛠️ Troubleshooting
+
+* ⚠️ Ensure browser drivers are configured and added to PATH
+* 📦 Verify dependencies in `pom.xml`
+* 📄 Check logs and reports for failure details
+
+## 📜 License
+
+Add your license here (MIT / Apache 2.0)
+
+## 👤 Author
+
+Add your name and contact details
+
+## 🏗️ Architecture Diagram
+
+<img width="2967" height="724" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/267d3113-08fc-462d-91f6-f5475bb68241" />
+
+
+graph TD
+   A[User/TestNG] --> B[Main Test Runner]
+   B --> C[Page Objects]
+   C --> D[Locators]
+   B --> E[Utils]
+   B --> F[Reporter]
+   B --> G[DataLibrary]
+   B --> H[Selenium API]
+   F --> I[Reports/Images]
+   G --> J[Data Files]
+   B --> K[Target/Test Output]
+   K --> L[HTML Reports]
+   K --> M[JUnit Reports]
+   K --> N[Logs]
+   B --> O[Browser Drivers]
+   O --> P[Web Browser]
+
+📝 Notes
+
+This framework follows industry best practices and is suitable for scalable and maintainable automation projects.
